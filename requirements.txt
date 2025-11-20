@@ -1,0 +1,6 @@
+pandas
+openpyxl
+plotly
+geopandas
+pyproj
+scikit-learn

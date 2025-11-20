@@ -1,19 +1,6 @@
 # Private Rent Analysis: Deprivation and Rent Changes in England
 
-This analysis examines the relationship between deprivation levels and private rent changes across English local authorities from 2020-2025.
-
-## Overview
-
-The analysis combines:
-- Private rent index data (2020-2025)
-- Index of Multiple Deprivation (IMD) scores (2025)
-- Geographic boundary data for local authorities
-
-## Key Findings
-
-- **Rent Risk Index**: Areas with high rent increases combined with high income deprivation present the greatest affordability challenges
-- **Regional Variation**: Rent changes vary significantly across regions, with some areas experiencing increases of 60%+ over the period
-- **Deprivation Correlation**: Higher deprivation scores are associated with faster rent increases on average
+Analysis for my [blog post](https://igdr.ch/posts/rent/) on rent in England.
 
 ## Visualizations
 
@@ -28,7 +15,7 @@ The analysis produces three main visualizations:
 - `final.ipynb` - Main analysis notebook
 - `price_index_private_rent.xlsx` - Private rent index data
 - `2025_deprivation_scores.xlsx` - Deprivation scores by local authority
-- `Local_Authority_Districts_May_2024_Boundaries_UK_BFE_*/` - Geographic boundary shapefiles
+- `boundaries` - Geographic boundary shapefiles
 
 ## Output Files
 
@@ -40,18 +27,12 @@ When run, the notebook generates:
 ## Usage
 
 1. Install required dependencies: `pip install -r requirements.txt`
+2. [Download](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-may-2024-boundaries-uk-bfe-2/about) and extract boundaries to `boundaries` folder
 2. Open `final.ipynb` in Jupyter Lab/Notebook or VS Code
 3. Run all cells to reproduce the analysis
 
-## Corporate Styling
-
-All visualizations use a consistent color scheme:
-- Beige background: `rgb(244, 240, 231)`
-- Cyan highlights: `rgb(10, 255, 206)`
-- Dark blue emphasis: `rgb(21, 38, 58)`
-
 ## Data Sources
 
-- Private rent data: UK Government rent index statistics
-- Deprivation data: UK Government Index of Multiple Deprivation 2025
-- Geographic boundaries: ONS Local Authority District boundaries (May 2024)
+- Private rent data: Office for National Statistics, [Private Rent and House Prices UK](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/privaterentandhousepricesuk/october2025), October 2025
+- Deprivation data: UK Ministry of Housing, Communities & Local Government, [Index of Multiple Deprivation](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-statistical-release), November 2025
+- Geographic boundaries: Office for National Statistics, [Local Authority District boundaries](https://geoportal.statistics.gov.uk/datasets/ons::local-authority-districts-may-2024-boundaries-uk-bfe-2/about), May 2024
